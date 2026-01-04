@@ -9,8 +9,6 @@ class LogisticRegression: public Model{
     VectorXd weights; 
     VectorXd y_hat_cached; 
     MatrixXd X_cached;
-
-
     std::pair<VectorXd, int> sigmoid(const VectorXd &z);
     VectorXd element_wise_log(VectorXd&z);
     public:
